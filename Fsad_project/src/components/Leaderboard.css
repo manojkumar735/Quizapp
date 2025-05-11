@@ -1,0 +1,103 @@
+.leaderboard-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #008080;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.app-title {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.challenge-title {
+  color: #32CD32;
+  margin: 0;
+  font-size: 20px;
+}
+
+.leaderboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.leaderboard-title {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.leaderboard-table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: #00FFFF;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f8f8f8;
+}
+
+.table-row:nth-child(odd) {
+  background-color: white;
+}
+
+.rank-column {
+  font-weight: bold;
+}
+
+.user-column {
+  color: #333;
+}
+
+.score-column {
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .challenge-title {
+    font-size: 18px;
+  }
+
+  .leaderboard-table {
+    font-size: 14px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 10px;
+  }
+} 

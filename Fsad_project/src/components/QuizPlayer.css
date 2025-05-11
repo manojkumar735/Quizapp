@@ -1,0 +1,275 @@
+.quiz-player-container {
+  min-height: 100vh;
+  background-color: #4a4a4a;
+  padding: 20px;
+}
+
+.quiz-warning {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.warning-text {
+  color: #a8a8ff;
+  margin: 5px 0;
+}
+
+.warning-refresh {
+  color: #ffd700;
+}
+
+.quiz-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quiz-title {
+  color: #333;
+}
+
+.title-text {
+  color: #008000;
+}
+
+.quiz-score {
+  color: #333;
+}
+
+.quiz-description {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.question-container {
+  margin-bottom: 30px;
+}
+
+.question-text {
+  color: #7b68ee;
+  margin-bottom: 20px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options-label {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.option {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover:not(.correct):not(.wrong) {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  background-color: #e3e3e3;
+  border-color: #999;
+}
+
+.option.correct {
+  background-color: #90EE90;
+  border-color: #008000;
+  color: #006400;
+}
+
+.option.wrong {
+  background-color: #FFB6C1;
+  border-color: #FF0000;
+  color: #8B0000;
+}
+
+.next-button {
+  display: block;
+  margin-left: auto;
+  padding: 10px 30px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.next-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled) {
+  background-color: #0000CC;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.total-questions {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75rem 2rem;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.question-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.question-nav-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.question-nav-btn.active {
+  background-color: #00bcd4;
+  color: white;
+  border-color: #00bcd4;
+}
+
+.question-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.option-group {
+  margin-bottom: 1rem;
+}
+
+.option-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.option-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.correct-options {
+  margin-bottom: 2rem;
+}
+
+.correct-options p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.quiz-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.add-question-btn,
+.save-quiz-btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.add-question-btn {
+  background-color: #00bcd4;
+}
+
+.save-quiz-btn {
+  background-color: #4CAF50;
+}
+
+.add-question-btn:hover {
+  background-color: #008c9e;
+}
+
+.save-quiz-btn:hover {
+  background-color: #388E3C;
+} 
